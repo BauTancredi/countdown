@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.css";
 
-const CountdownElemnt = () => {
+const CountdownElemnt = ({ unit, label }) => {
   return (
     <div className="countdown__element__container">
       <div className="countdown__element__block">
-        <h2>08</h2>
+        <h2>{unit}</h2>
       </div>
-      <p className="countdown__element__label">Días</p>
+      <p className="countdown__element__label">{label}</p>
     </div>
   );
 };
